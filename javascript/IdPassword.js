@@ -10,7 +10,7 @@ function detailValidation(){
     var hasDigit = /\d/.test(userPassword); 
     var hasSpecialChar = /[!@#$%^&*]/.test(userPassword); 
 
-    //document.write(userName + userPassword);
+    //document.getElementById('tempResult').innerHTML=userName+userPassword;
     if(userName == "" || userPassword == ""){
         result="password or user name can not be null";
     }
