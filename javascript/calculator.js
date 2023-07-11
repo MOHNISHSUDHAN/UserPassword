@@ -1,3 +1,3 @@
-function calculator(first,second,third){
-    document.write(first + second + third);
+function calculator(first,second,thirda){
+    document.write(first + second + thirda);
 }
