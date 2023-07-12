@@ -18,18 +18,23 @@
             <input id="userName" type="text" placeholder="User Name"  required><br></br>
         </div>
         <div>
+            <p id="userNameError" class="alert"></p>
+        </div>
+        <div>
             <label for="userPassword">Password</label><br>
             <input id="userPassword" type="password" placeholder="Password"><br></br>
         </div>
         <div>
-            <button onclick="detailValidation()">Login</button><br></br>
+            <p id="userPasswordError" class="alert"></p>
         </div>
         <div>
-            <button onclick="refreshPage()" >Refresh</button>
+            <button onclick="detailValidation()">Login</button><br></br>
         </div>
+        
     </form>
 </fieldset>
 <p id="result"></p>
+
 <button id = "refresh" onclick="refreshPage()">Reset</button>
 </div>
 </body>

@@ -10,12 +10,17 @@ function detailValidation(){
     var hasDigit = /\d/.test(userPassword); 
     var hasSpecialChar = /[!@#$%^&*]/.test(userPassword); 
 
-    //document.getElementById('tempResult').innerHTML=userName+userPassword;
+    if(userName == "" || userPassword == ""){
+      if(userName == "")document.getElementById('userNameError').innerHTML="User Name can not be blank";
+      else if(userPassword == "") document.getElementById('userPasswordError').innerHTML="User Password can not be blank";
+      
+      refreshPage();
+    }
     if(userName == "" || userPassword == ""){
         result="password or user name can not be null";
     }
     idBoolean = pattern.test(userName);
-    
+
     if ( userPassword.length >= minLength &&
         hasUpperCase &&
         hasLowerCase &&

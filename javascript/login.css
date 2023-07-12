@@ -11,8 +11,8 @@ h1{
 }
 form{
     text-align: left;
-    background-color:brown;
-    color:beige;
+    background-color:wheat;
+    color:black;
 }
 .full{
     width:25%;
@@ -24,4 +24,10 @@ legend{
 }
 body{
     background-color:burlywood;
+}
+#id{
+    background-color: aliceblue;
+}
+.alert{
+    color: red;
 }
