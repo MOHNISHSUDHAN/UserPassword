@@ -13,8 +13,6 @@ function detailValidation(){
     if(userName == "" || userPassword == ""){
       if(userName == "")document.getElementById('userNameError').innerHTML="User Name can not be blank";
       else if(userPassword == "") document.getElementById('userPasswordError').innerHTML="User Password can not be blank";
-      
-      refreshPage();
     }
     if(userName == "" || userPassword == ""){
         result="password or user name can not be null";
@@ -28,11 +26,11 @@ function detailValidation(){
         hasSpecialChar
       ){
         passwordBoolean=true; 
-      } else{
+      } else {
         passwordBoolean=false;
       }
 
-      if(passwordBoolean && idBoolean){
+      if(passwordBoolean && idBoolean) {
         result = "Password and user name is valid.";
       }
 
