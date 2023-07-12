@@ -1,0 +1,27 @@
+div{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+#refresh{
+    position : absolute;
+    right:10%;
+    top:40%;
+}
+form{
+    text-align: left;
+    background-color:brown;
+    color:beige;
+}
+.full{
+    width:25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+legend{
+    text-align: center ;
+}
+body{
+    background-color:burlywood;
+}

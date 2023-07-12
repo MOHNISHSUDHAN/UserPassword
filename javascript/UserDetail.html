@@ -5,17 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoginPage</title>
     <script src = "IdPassword.js"></script>
+    <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>
     <h1>Login Page Validation</h1>
+    <div class="full">
+    <fieldset>
+        <legend>Please Enter User name And Password</legend>
     <form action="#">
-    <label for="userName">User Name : </label>
-    <input id="userName" type="text" placeholder="User Name" required>
-    <label for="userPassword">Password</label>
-    <input id="userPassword" type="password" placeholder="Password"><br></br>
-    <button onclick="detailValidation()">Login</button>
-</form>
-    <p id="result"></p>
-
+        <div> <!-- onmouseover="over()" onmouseout="out()"-->
+            <label for="userName">User Name</label><br>
+            <input id="userName" type="text" placeholder="User Name"  required><br></br>
+        </div>
+        <div>
+            <label for="userPassword">Password</label><br>
+            <input id="userPassword" type="password" placeholder="Password"><br></br>
+        </div>
+        <div>
+            <button onclick="detailValidation()">Login</button><br></br>
+        </div>
+        <div>
+            <button onclick="refreshPage()" >Refresh</button>
+        </div>
+    </form>
+</fieldset>
+<p id="result"></p>
+<button id = "refresh" onclick="refreshPage()">Reset</button>
+</div>
 </body>
 </html>
+
