@@ -15,7 +15,7 @@ function detailValidation(){
         result="password or user name can not be null";
     }
     idBoolean = pattern.test(userName);
-
+    
     if ( userPassword.length >= minLength &&
         hasUpperCase &&
         hasLowerCase &&
@@ -33,3 +33,13 @@ function detailValidation(){
 
       document.getElementById('result').innerText = result;
 }
+function refreshPage() 
+{
+  location.reload();
+}
+  function over(){
+    alert("Mouse Over");
+  }
+  function out(){
+    alert("Mouse Out");
+  }
